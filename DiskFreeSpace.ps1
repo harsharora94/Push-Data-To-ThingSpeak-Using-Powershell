@@ -31,6 +31,7 @@ $key = "xxxxxxxxxxxxxxxx"
 
 # ThingSpeak URL
 $url = "https://api.thingspeak.com/update?key=" + $key + "&field1=" + $disk.DiskFreeSpace
+LogWrite "ThingSpeak URL: '$url'" 
 
 # Send Disk Free Space to ThingSpeak
 $HTTP_Client = new-object net.webclient
